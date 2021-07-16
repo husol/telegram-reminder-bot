@@ -19,13 +19,13 @@ export TELEGRAM_ALLOWED_CHATS=<CHAT_IDS_SEPARATED_BY_COMMA>
 
 ## Commands
 
-### Remind list
-Retrieve the list of active and completed reminders  
-`/remindlist`
-
 ### Remind help
 List all commands  
 `/remindhelp`
+
+### Remind list
+Retrieve the list of active and completed reminders  
+`/remindlist`
 
 ### Remind detail
 Display details of a reminder  
