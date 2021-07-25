@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/enrico5b1b4/telegram-bot/pkg/date"
+	"github.com/husol/telegram-reminder-bot/pkg/date"
 	"github.com/stretchr/testify/assert"
 )
 

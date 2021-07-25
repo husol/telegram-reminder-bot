@@ -9,9 +9,9 @@ import (
 	"testing"
 
 	"github.com/enrico5b1b4/tbwrap"
-	"github.com/enrico5b1b4/telegram-bot/pkg/bot"
-	"github.com/enrico5b1b4/telegram-bot/pkg/db"
-	"github.com/enrico5b1b4/telegram-bot/pkg/telegram/fakes"
+	"github.com/husol/telegram-reminder-bot/pkg/bot"
+	"github.com/husol/telegram-reminder-bot/pkg/db"
+	"github.com/husol/telegram-reminder-bot/pkg/telegram/fakes"
 	"github.com/stretchr/testify/require"
 	bolt "go.etcd.io/bbolt"
 )

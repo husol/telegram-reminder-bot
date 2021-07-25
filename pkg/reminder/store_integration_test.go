@@ -7,9 +7,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/enrico5b1b4/telegram-bot/pkg/cron"
-	"github.com/enrico5b1b4/telegram-bot/pkg/db"
-	"github.com/enrico5b1b4/telegram-bot/pkg/reminder"
+	"github.com/husol/telegram-reminder-bot/pkg/cron"
+	"github.com/husol/telegram-reminder-bot/pkg/db"
+	"github.com/husol/telegram-reminder-bot/pkg/reminder"
 	"github.com/stretchr/testify/assert"
 )
 

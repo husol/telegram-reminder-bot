@@ -8,7 +8,7 @@ import (
 	reflect "reflect"
 	time "time"
 
-	reminder "github.com/enrico5b1b4/telegram-bot/pkg/reminder"
+	reminder "github.com/husol/telegram-reminder-bot/pkg/reminder"
 	gomock "github.com/golang/mock/gomock"
 )
 

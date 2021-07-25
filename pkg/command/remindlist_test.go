@@ -6,9 +6,9 @@ import (
 	"testing"
 
 	"github.com/enrico5b1b4/tbwrap"
-	"github.com/enrico5b1b4/telegram-bot/pkg/command"
-	"github.com/enrico5b1b4/telegram-bot/pkg/command/mocks"
-	fakeBot "github.com/enrico5b1b4/telegram-bot/pkg/telegram/fakes"
+	"github.com/husol/telegram-reminder-bot/pkg/command"
+	"github.com/husol/telegram-reminder-bot/pkg/command/mocks"
+	fakeBot "github.com/husol/telegram-reminder-bot/pkg/telegram/fakes"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
 	tb "gopkg.in/tucnak/telebot.v2"

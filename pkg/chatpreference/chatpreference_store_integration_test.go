@@ -7,8 +7,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/enrico5b1b4/telegram-bot/pkg/chatpreference"
-	"github.com/enrico5b1b4/telegram-bot/pkg/db"
+	"github.com/husol/telegram-reminder-bot/pkg/chatpreference"
+	"github.com/husol/telegram-reminder-bot/pkg/db"
 	"github.com/stretchr/testify/assert"
 )
 

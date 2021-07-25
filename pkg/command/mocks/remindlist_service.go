@@ -7,7 +7,7 @@ package mocks
 import (
 	reflect "reflect"
 
-	command "github.com/enrico5b1b4/telegram-bot/pkg/command"
+	command "github.com/husol/telegram-reminder-bot/pkg/command"
 	gomock "github.com/golang/mock/gomock"
 )
 

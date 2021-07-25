@@ -7,7 +7,7 @@ package mocks
 import (
 	reflect "reflect"
 
-	chatpreference "github.com/enrico5b1b4/telegram-bot/pkg/chatpreference"
+	chatpreference "github.com/husol/telegram-reminder-bot/pkg/chatpreference"
 	gomock "github.com/golang/mock/gomock"
 )
 

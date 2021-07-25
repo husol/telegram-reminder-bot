@@ -7,7 +7,7 @@ package mocks
 import (
 	reflect "reflect"
 
-	cron "github.com/enrico5b1b4/telegram-bot/pkg/cron"
+	cron "github.com/husol/telegram-reminder-bot/pkg/cron"
 	gomock "github.com/golang/mock/gomock"
 )
 
