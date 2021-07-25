@@ -21,7 +21,7 @@ type MessageRemindIn struct {
 // nolint:lll
 const HandlePatternRemindIn = `/remind me in (?P<amount1>\d{1,2}) (?P<measure1>minute|minutes|hour|hours|day|days)?(, (?P<amount2>\d{1,2}) (?P<measure2>minute|minutes|hour|hours|day|days)?(, (?P<amount3>\d{1,2}) (?P<measure3>minute|minutes|hour|hours|day|days))?)? (?P<message>.*)`
 
-func HandleRemindIn(service reminder.Servicer) func(c tbwrap.Context) error {
+func HandleRemindIn(service reminder.ServiceReminder) func(c tbwrap.Context) error {
 	return func(c tbwrap.Context) error {
 		message := new(MessageRemindIn)
 		if err := c.Bind(message); err != nil {

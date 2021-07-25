@@ -11,7 +11,7 @@ import (
 	gomock "github.com/golang/mock/gomock"
 )
 
-// MockServicer is a mock of Servicer interface
+// MockServicer is a mock of ServiceReminder interface
 type MockServicer struct {
 	ctrl     *gomock.Controller
 	recorder *MockServicerMockRecorder

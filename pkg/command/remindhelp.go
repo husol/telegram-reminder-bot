@@ -50,5 +50,5 @@ _set a recurring reminder_
 
 _set timezone for chat reminders_
 /gettimezone
-/settimezone Europe/London
+/settimezone Asia/Ho_Chi_Minh
 `

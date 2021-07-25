@@ -12,7 +12,7 @@ import (
 	"github.com/husol/telegram-reminder-bot/pkg/cron"
 )
 
-type Servicer interface {
+type ServiceReminder interface {
 	AddReminderOnDateTime(chatID int, command string, dateTime DateTime, message string) (NextScheduleChatTime, error)
 	AddReminderOnWordDateTime(
 		chatID int,

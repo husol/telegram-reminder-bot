@@ -19,7 +19,7 @@ type MessageRemindEveryDay struct {
 // nolint:lll
 const HandlePatternRemindEveryDay = `/remind me every ?(?P<when>day|morning|afternoon|evening|night|weekday|weekend)? ?(at (?P<hour>\d{1,2})?((:|.)(?P<minute>\d{1,2}))??(?P<ampm>am|pm)?)? (?P<message>.*)`
 
-func HandleRemindEveryDay(service reminder.Servicer) func(c tbwrap.Context) error {
+func HandleRemindEveryDay(service reminder.ServiceReminder) func(c tbwrap.Context) error {
 	return func(c tbwrap.Context) error {
 		message := new(MessageRemindEveryDay)
 		if err := c.Bind(message); err != nil {

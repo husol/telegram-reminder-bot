@@ -20,7 +20,7 @@ type MessageRemindEveryDayNumberMonth struct {
 // nolint:lll
 const HandlePatternRemindEveryDayNumberMonth = `/remind me every (?P<day>\d{1,2})(?:(st|nd|rd|th))? of (?P<month>(J|j)anuary|(F|f)ebruary|(M|m)arch|(A|a)pril|(M|m)ay|(J|j)une|(J|j)uly|(A|a)ugust|(S|s)eptember|(O|o)ctober|(N|n)ovember|(D|d)ecember) ?(at (?P<hour>\d{1,2})?((:|.)(?P<minute>\d{1,2}))??(?P<ampm>am|pm)?)? (?P<message>.*)`
 
-func HandleRemindEveryDayNumberMonth(service reminder.Servicer) func(c tbwrap.Context) error {
+func HandleRemindEveryDayNumberMonth(service reminder.ServiceReminder) func(c tbwrap.Context) error {
 	return func(c tbwrap.Context) error {
 		message := new(MessageRemindEveryDayNumberMonth)
 		if err := c.Bind(message); err != nil {

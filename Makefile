@@ -23,4 +23,4 @@ run:
 	go run ./cmd/main.go
 
 build:
-	env GOOS=linux GOARCH=amd64 go build -o ./build/telegram-reminder-bot ./cmd/main.go
+	env GOOS=linux GOARCH=amd64 go build -o ./bin/build/telegram-reminder-bot ./cmd/main.go

@@ -48,10 +48,16 @@ func New(
 	}
 	log.Printf("loaded %d reminders", remindersLoaded)
 
-	telegramBot.Handle(command.HandlePatternRemindList, command.HandleRemindList(remindListService, remindListButtons))
-	telegramBot.Handle(command.HandlePatternHelp, command.HandleRemindHelp())
-	telegramBot.HandleMultiRegExp(command.HandlePatternRemindDetail, command.HandleRemindDetail(remindDetailService, command.NewRemindDetailButtons()))
-	telegramBot.HandleMultiRegExp(command.HandlePatternRemindDelete, command.HandleRemindDelete(remindDeleteService))
+	telegramBot.Handle(command.HandlePatternRemindList,
+		command.HandleRemindList(remindListService, remindListButtons))
+	telegramBot.Handle(command.HandlePatternHelp,
+		command.HandleRemindHelp())
+	telegramBot.HandleMultiRegExp(command.HandlePatternRemindDetail,
+		command.HandleRemindDetail(remindDetailService, command.NewRemindDetailButtons()))
+	telegramBot.HandleMultiRegExp(command.HandlePatternRemindDelete,
+		command.HandleRemindDelete(remindDeleteService),
+	)
+
 	telegramBot.HandleRegExp(
 		command.HandlePatternRemindDayMonth,
 		command.HandleRemindDayMonth(remindDateService),
