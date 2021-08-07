@@ -70,7 +70,7 @@ func NewButtons() map[string]*telebot.InlineButton {
 	}
 	completeBtn := telebot.InlineButton{
 		Unique: CompleteBtn,
-		Text:   "✅ Done",
+		Text:   "✅ Finish Schedule",
 	}
 
 	return map[string]*telebot.InlineButton{
