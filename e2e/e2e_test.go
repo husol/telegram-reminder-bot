@@ -82,7 +82,7 @@ func TestE2E(t *testing.T) {
 	require.Contains(t, telebot.OutboundSendMessages[10], `MSG10_`)
 
 	telebot.SimulateIncomingMessageToChat(chatID, "/gettimezone")
-	require.Contains(t, telebot.OutboundSendMessages[11], `Europe/London`)
+	require.Contains(t, telebot.OutboundSendMessages[11], `Asia/Ho_Chi_Minh`)
 
 	telebot.SimulateIncomingMessageToChat(chatID, "/settimezone Europe/Rome")
 	require.Contains(t, telebot.OutboundSendMessages[12], `Europe/Rome`)

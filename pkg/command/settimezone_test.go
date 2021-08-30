@@ -17,7 +17,7 @@ import (
 func TestHandleSetTimezone(t *testing.T) {
 	handlerPattern, err := regexp.Compile(command.HandlePatternSetTimezone)
 	require.NoError(t, err)
-	text := "/settimezone Europe/London"
+	text := "/settimezone Asia/Ho_Chi_Minh"
 	chat := &tb.Chat{ID: int64(1)}
 
 	t.Run("success", func(t *testing.T) {
@@ -28,7 +28,7 @@ func TestHandleSetTimezone(t *testing.T) {
 		mockService := mocks.NewMockSetTimezoneServicer(mockCtrl)
 		mockService.
 			EXPECT().
-			SetTimeZone(1, "Europe/London").
+			SetTimeZone(1, "Asia/Ho_Chi_Minh").
 			Return(nil)
 
 		err := command.HandleSetTimezone(mockService)(c)
@@ -44,7 +44,7 @@ func TestHandleSetTimezone(t *testing.T) {
 		mockService := mocks.NewMockSetTimezoneServicer(mockCtrl)
 		mockService.
 			EXPECT().
-			SetTimeZone(1, "Europe/London").
+			SetTimeZone(1, "Asia/Ho_Chi_Minh").
 			Return(errors.New("error"))
 
 		err := command.HandleSetTimezone(mockService)(c)

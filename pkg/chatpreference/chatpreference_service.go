@@ -1,6 +1,6 @@
 package chatpreference
 
-const defaultTimeZone = "Europe/London"
+const defaultTimeZone = "Asia/Ho_Chi_Minh"
 
 type Service struct {
 	store Storer

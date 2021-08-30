@@ -30,7 +30,7 @@ func TestHandleGetTimezone(t *testing.T) {
 		mockChatPreferenceStore.
 			EXPECT().
 			GetChatPreference(1).
-			Return(&chatpreference.ChatPreference{ChatID: 1, TimeZone: "Europe/London"}, nil)
+			Return(&chatpreference.ChatPreference{ChatID: 1, TimeZone: "Asia/Ho_Chi_Minh"}, nil)
 
 		err := command.HandleGetTimezone(mockChatPreferenceStore)(c)
 		require.NoError(t, err)

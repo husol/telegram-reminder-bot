@@ -4,13 +4,13 @@ import (
 	"testing"
 	"time"
 
+	"github.com/golang/mock/gomock"
 	"github.com/husol/telegram-reminder-bot/pkg/chatpreference"
 	chatpreferenceMocks "github.com/husol/telegram-reminder-bot/pkg/chatpreference/mocks"
 	"github.com/husol/telegram-reminder-bot/pkg/cron"
 	"github.com/husol/telegram-reminder-bot/pkg/date"
 	"github.com/husol/telegram-reminder-bot/pkg/reminder"
 	reminderMocks "github.com/husol/telegram-reminder-bot/pkg/reminder/mocks"
-	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
@@ -24,7 +24,7 @@ type Mocks struct {
 const (
 	message    = "message"
 	command    = "command"
-	timezone   = "Europe/London"
+	timezone   = "Asia/Ho_Chi_Minh"
 	chatID     = 1
 	cronID     = 2
 	reminderID = 3
